@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cow Strike</title>
+  <style>
+    /* Style สำหรับ UI */
+    .container { max-width: 800px; margin: auto; padding: 20px; }
+    .section { margin-bottom: 20px; }
+    #machinesStatus { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cow Strike</h1>
+    <div class="section">
+      <h2>Actions</h2>
+      <div>
+        <label for="cowId">Cow ID :</label>
+        <input type="number" id="cowId">
+      </div>
+
+      <div>
+        <label for="cowTeats">Number of Teats :</label>
+        <input type="number" id="cowTeats">
+      </div>
+        
+      <div>
+        <label for="cowTargetMachine">Target Machine :</label>
+        <input type="number" id="cowTargetMachine">
+      </div>
+
+        <button id="processButton">Process</button>
+        <button id="addCowButton">Add Cow</button>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Status</h2>
+      <div id="milkProduced"></div>
+      <div id="interruptions"></div>
+      <div id="cowsProcessed"></div>
+      <div id="problematicCows"></div>
+      <div id="machinesStatus"></div>
+    </div>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controller.js"></script>
+  </div>
+</body>
+</html>
